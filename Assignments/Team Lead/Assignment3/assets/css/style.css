@@ -1,0 +1,14 @@
+img {
+  width: 1000px;
+  text-align: center;
+  min-width: 0;
+  margin-top: 0;
+}
+
+span {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center !important;
+}
