@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="stylesheet" href="style6.css">
+ <title>Profile</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Profile</h1>
+      <h2>UserName : {{user}}</h2>
+      <h2>Email : {{email}}</h2>
+
+    <a href="change password.html"><button>change password</button></a></p> 
+   
+  <p> <a href="index.html"><button>Back To Home</button></a></p>
+    
+      <br />
+      <strong>{{msg}}</strong>
+    </div>
+  
+  </body>
+</html>
