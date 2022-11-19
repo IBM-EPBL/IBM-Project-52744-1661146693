@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nut-ass
+spec:
+  selector:
+    app: nut-ass
+  ports:
+  - port: 5000
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nut-ass
+  labels:
+    app: nut-ass
+spec:
+  selector:
+    matchLabels:
+      app: nut-ass
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nut-ass
+    spec:
+      containers:
+      - name: nut-ass
+        image: icr.io/nut-space/nut-ass:latest
+        ports:
+        - containerPort: 5000
